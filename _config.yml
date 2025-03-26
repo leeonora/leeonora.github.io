@@ -28,7 +28,7 @@ twitter_username:
 github_username:  leeonora | etc | etc
 
 # Build settings
-theme: dinky
+theme: jekyll-theme-tactile
 plugins:
   - jekyll-feed
 
