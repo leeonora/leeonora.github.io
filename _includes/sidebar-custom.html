@@ -1,0 +1,11 @@
+<div class="sidebar">
+    <div class="author__content">
+        <h3 style="margin-bottom: 0.3rem;">Group 72</h3>
+        {% for member in page.group_members %}
+          <li>{{ member.name }}</li>
+        {% endfor %}
+      <p><strong>{{ page.course }}</strong><br>
+      {{ page.date }}</p>
+    </div>
+  </div>
+  
