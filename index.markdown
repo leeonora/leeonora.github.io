@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-title: "Crimes and COVID"
+title: "Masks On: Crime during COVID"
 subtitle: "Crime Trends in San Francisco during the pandemic"
 image: 
   path: /images/coronavirus-header.jpg
@@ -17,17 +17,45 @@ course: Social data analysis and visualization
 date: March 31, 2025
 ---
 
-
 ## Introduction
 
-The COVID-19 pandemic dramatically changed every aspect of daily life in cities across the globe, San Francisco included. As public health mandates reshaped patterns of movement, social interaction, and economic activity, these shifts also had significant implications for criminal behavior. By analyzing available data and reviewing relevant literature, we wish to make a connection between crime patterns in San Fransisco, and the outbreak of COVID-19. 
+The COVID-19 pandemic dramatically changed every aspect of daily life in cities across the globe, San Francisco included. As public health mandates reshaped patterns of movement, social interaction, and economic activity, these shifts also had significant implications for criminal behavior.
 
 ### The dataset
 
-Our dataset is the ... from ...
+Our analysis is based on the Our data comes from [San Francisco’s open data portal](https://data.sfgov.org/browse?category=Public+Safety&sortBy=relevance&page=1&pageSize=20) -- a database of incidents from the San Fransisco Police Department (SFPD), detailling crimes from 2003 to 2024. The data has been cleaned and sorted, so it consists of the following columns: 
+
+| Column       | Description                                                       |
+|--------------|-------------------------------------------------------------------|
+| Category     | Type of crime (e.g., assault, burglary, theft)                    |
+| Date         | Date when the incident occurred                                   |
+| Time         | Time when the incident occurred                                   |
+| PdDistrict   | Police district responsible for the location                      |
+| X            | Longitude of the crime location                                   |
+| Y            | Latitude of the crime location                                    |
+| Descript     | Short text description of the incident                            |
+
+These columns provide all the necessary data for our analysis. 
+
+---
 
 ## Crimes and COVID
 
-here's a sexy little plot: 
+If there was any doubt about the effect of COVID-19, the relation between positive tests and crime numbers is outlined in the figure below. 
+
+Plot test:  
 
 {% include bokeh-plot.html %}
+
+---
+
+## Most Affected Crimes
+
+There is a clear connection between the outbreak of COVID-19, and the change in crime levels in SF. However, some crimes were significantly more affected than others, as seen below: 
+
+
+---
+
+## Incidents of Robbery (change)
+
+It is clear from the above analysis that the robbery business suffered the most during the pandemic. To see just how much, we encourage you to press play on the graph below, and note the shift in incident after 2020. 
