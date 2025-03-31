@@ -11,8 +11,8 @@ image:
 group_sidebar: true
 group_members:
   - name: s193602
-  - name: s123456
-  - name: s123456
+  - name: s203520
+  - name: s203581
 course: Social data analysis and visualization
 date: March 31, 2025
 ---
@@ -43,16 +43,15 @@ These columns provide all the necessary data for our analysis.
 
 If there was any doubt about the effect of COVID-19, the relation between positive tests and crime numbers is outlined in the figure below. 
 
-Plot test:  
-
 {% include bokeh-plot.html %}
+
+Here, the left y-axis shows the percentage of positive tests in a given week (green curve) and the right shows the weekly crime count (i.e. the sum of crimes in a given week). As expected, most crimes show a decreasing rate during the peak years of the pandemic, with prostitution serving as a notable example; given widespread public concern regarding physical contact during this period, it is unsurprising that this particular offense experienced a significant decrease in occurences. Another crime that stands out is burglary 
 
 ---
 
 ## Most Affected Crimes
 
-There is a clear connection between the outbreak of COVID-19, and the change in crime levels in SF. However, some crimes were significantly more affected than others, as seen below: 
-
+There is a clear connection between the outbreak of COVID-19, and the change in crime levels in SF. However, some crimes were significantly more affected than others, as seen in the figure below. 
 
 ---
 
