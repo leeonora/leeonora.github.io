@@ -192,7 +192,7 @@ Previous analysis revealed that burglary incidents increased during the lockdown
     title="Interactive COVID crime plot"
   ></iframe>
   <figcaption style="font-size: 0.95rem; color: #777; margin-top: 0.5em;">
-    Figure 1. Interactive visualization of crime patterns during the COVID-19 pandemic. To interact with the graph, select or deselect different crimes in the legend on the right.
+    Figure 3. Daily average difference in crime incidents between lockdown and non-lockdown periods, visualized using hexagonal bins. The color scale indicates the magnitude of the difference, as detailed in the legend. 
   </figcaption>
 </figure>
 
