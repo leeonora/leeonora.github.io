@@ -92,7 +92,7 @@ date: March 31, 2025
           <tr><td>Descript</td><td>Short text description of the incident</td></tr>
         </tbody>
       </table>
-      <figcaption style="text-align: center; font-size: 0.95rem; color: #cf6650; margin-bottom: 0.5em;">
+      <figcaption style="text-align: center; font-size: 0.95rem; color: #777; margin-bottom: 0.5em;">
         Table 1. Column descriptions from San Francisco’s open data portal dataset.
       </figcaption>
     </figure>
@@ -113,7 +113,7 @@ date: March 31, 2025
           <tr><td>tests</td><td>Total tests collected on the specified date</td></tr>
         </tbody>
       </table>
-      <figcaption style="text-align: center; font-size: 0.95rem; color: #cf6650; margin-bottom: 0.5em;">
+      <figcaption style="text-align: center; font-size: 0.95rem; color: #777; margin-bottom: 0.5em;">
         Table 2. Column descriptions from DataSF Health and Social Data dataset.
       </figcaption>
     </figure>
@@ -136,7 +136,7 @@ If there was any doubt about the effect of COVID-19, the relation between positi
     style="width: 100%; height: 500px; border: none;"
     title="Interactive COVID crime plot"
   ></iframe>
-  <figcaption style="font-size: 0.95rem; color: #cf6650; margin-top: 0.5em;">
+  <figcaption style="font-size: 0.95rem; color: #777; margin-top: 0.5em;">
     Figure 1. Interactive visualization of crime patterns during the COVID-19 pandemic. To interact with the graph, select or deselect different crimes in the legend on the right.
   </figcaption>
 </figure>
@@ -154,34 +154,47 @@ For a deeper examination of the extent to which each crime category was impacted
 
 <figure style="text-align: center; margin: 2em 0;">
   <img src="/plots/mean_daily_crimes.svg" style="width:100%; height:auto;" alt="Mean daily crimes over time" />
-  <figcaption style="font-size: 0.95rem; color: #cf6650; margin-top: 0.5em;">
+  <figcaption style="font-size: 0.95rem; color: #777; margin-top: 0.5em;">
     Figure 2. Difference in average crime occurences in San Fransisco in lockdown (orange) and non-lockdown (dark purple) periods. Each set of bars is labeled with the percentage increase (green text) decrease (red text).
   </figcaption>
 </figure>
 
-
-The data reveal that there is a large difference in crime trends during the COVID lockdown period for some of the focuscrimes. 
-Many offenses—such as larceny/theft, assault, drug/narcotics, and prostitution—declined. With fewer people out on the streets and in public spaces, there were fewer opportunities for crimes like robbery and assault, as well as prostitution to occur. Also, the closure of local businesses and fewer tourists, might have led to fewer cases of larceny and shoplifting. 
+The data reveal that there is a large difference in crime trends during the COVID lockdown period for some of the focus crimes. 
+Many offenses— such as larceny/theft, assault, drug/narcotics, and prostitution—declined. With fewer people out on the streets and in public spaces, there were fewer opportunities for crimes like robbery and assault, as well as prostitution to occur. Also, the closure of local businesses and fewer tourists, might have led to fewer cases of larceny and shoplifting. 
 
 Interestingly, burglaries surged by almost 70%. This pattern may be explained by several interrelated factors:
 
-*   Reduced Guardianship:
-Lockdown orders meant that many residences and businesses were left unoccupied. With fewer people present, the natural surveillance and guardianship that were significantly reduced. This created ideal conditions for burglars to target properties with minimal risk.
+*   Reduced Security:
+Lockdown orders meant that many residences and businesses were left unoccupied. With fewer people present, the natural surveillance and security measures were significantly reduced. This created ideal conditions for burglars to target properties with minimal risk.
 
 *   Shift in Criminal Opportunity:
-Routine activity theory suggests that crime occurs when motivated offenders encounter suitable targets in the absence of capable guardians. As public spaces saw fewer interactions—leading to declines in crimes like larceny and assault—burglary became a more attractive option for offenders, particularly those targeting commercial premises or vacant homes.
+Routine activity theory suggests that crime occurs when potential offenders come into contact with suitable targets, without the threat of potential security measures. As public spaces saw fewer interactions -- leading to declines in crimes like larceny and assault -- burglary became a more attractive option for offenders, particularly those who target commercial premises or vacant homes.
 
-*   Economic Pressures:
-The financial uncertainty and increased economic stress during the pandemic may have driven some individuals toward property crimes as a means to supplement lost income. This economic desperation could partly explain the pronounced rise in burglaries, even as other crime categories experienced downturns.
+*   Economic Pressure:
+The financial uncertainty and increased economic stress during the pandemic may have driven some people toward property crimes as a means to supplement lost income. This economic desperation could partly explain the pronounced rise in burglaries, even as other crime categories experienced downturns.
 
 *   Displacement Effects:
-With heightened police presence and enforcement efforts in public areas to curb street crimes, offenders may have shifted their focus toward crimes that exploit less-monitored environments, such as burglary. This displacement of criminal activity underscores how changes in routine activities can have uneven impacts across different crime types.
+With heightened police presence and enforcement efforts in public areas to stop street crimes, offenders may have shifted their focus toward crimes that exploit less monitored environments, such as burglary. This displacement of criminal activity highlights how changes in routine activities can have uneven impacts across different crime types.
 
-Overall, the nearly 70% increase in burglaries during the COVID period signals that while reduced mobility and increased public enforcement helped lower other types of crimes, they inadvertently created vulnerabilities in areas with diminished guardianship. Studies such as those by Yim and Riddell (2022) have discussed similar trends during this period in san fransisco. For the last section, we will investigate the location trends for burglaries over time during this period. [[1]](https://pmc.ncbi.nlm.nih.gov/articles/PMC9387408/)
+Overall, the nearly 70% increase in burglaries during the COVID period signals that while reduced mobility and increased public enforcement helped lower other types of crimes, they created vulnerabilities in areas with diminished guardianship. Studies such as those by Yim and Riddell (2022) have discussed similar trends during this period in san fransisco. For the last section, we will investigate the location trends for burglaries over time during this period. [[1]](https://pmc.ncbi.nlm.nih.gov/articles/PMC9387408/)
 
 ---
 
 ## Map of Burglary Incidents Over Time
+
+Previous analysis revealed that burglary incidents increased during the lockdown periods in San Francisco. The below map compares the locations of reported burglary incidents in San Francisco before and during the lockdowns. This analysis explores whether crime patterns shifted geographically within the city. One hypothesis suggested that burglary incidents would increase in industrial areas as the stay-at-home order left them unattended [citation]. However, the visualization of the data does not reveal this.
+
+
+<figure style="text-align: center; margin: 2em 0;">
+  <iframe 
+    src="/plots/burglary_difference_map.html"
+    style="width: 100%; height: 500px; border: none;"
+    title="Interactive COVID crime plot"
+  ></iframe>
+  <figcaption style="font-size: 0.95rem; color: #777; margin-top: 0.5em;">
+    Figure 1. Interactive visualization of crime patterns during the COVID-19 pandemic. To interact with the graph, select or deselect different crimes in the legend on the right.
+  </figcaption>
+</figure>
 
 
 ## Conclusion
