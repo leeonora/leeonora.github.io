@@ -63,25 +63,63 @@ date: March 31, 2025
       <a href="https://data.sfgov.org/Health-and-Social-Services/COVID-19-Testing-Over-Time/nfpa-mg4g/about_data?fbclid=IwY2xjawJXhxtleHRuA2FlbQIxMAABHeaQj0zq-OwbW3dAea5VXlPDTf_6xVWeIKo-RrsJwm0tfSX5JcEfb9n-0g_aem_YvXp_yEs8isIKCLf7rhhnQ" target="_blank" rel="noopener noreferrer">
         DataSF Health and Social Data
         </a>
-      of COVID-19 testing over time. The data has been cleaned and sorted, so it consists of the columns outlines in Table 1 below. 
+      of COVID-19 testing over time. The data has been cleaned and sorted, so it consists of the columns outlines in the two tables below. 
     </p>
 
   </div>
 </div>
 
-| Column       | Description                                                       |
-|--------------|-------------------------------------------------------------------|
-| Category     | Type of crime (e.g., assault, burglary, theft)                    |
-| Date         | Date when the incident occurred                                   |
-| Time         | Time when the incident occurred                                   |
-| PdDistrict   | Police district responsible for the location                      |
-| X            | Longitude of the crime location                                   |
-| Y            | Latitude of the crime location                                    |
-| Descript     | Short text description of the incident                            |
 
-<p style="text-align:center; font-size: 0.95rem; color: #888;">
-  Table 1. Description of columns in the dataset.
-</p>
+<div style="display: flex; gap: 2em; justify-content: center; flex-wrap: wrap; margin-bottom: 2em;">
+
+  <!-- Table 1 -->
+  <div style="flex: 1; min-width: 250px;">
+    <figure style="margin: 0;">
+      <table>
+        <thead>
+          <tr>
+            <th>Column</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Category</td><td>Type of crime (e.g., assault, burglary, theft)</td></tr>
+          <tr><td>Date</td><td>Date when the incident occurred</td></tr>
+          <tr><td>Time</td><td>Time when the incident occurred</td></tr>
+          <tr><td>PdDistrict</td><td>Police district responsible for the location</td></tr>
+          <tr><td>X</td><td>Longitude of the crime location</td></tr>
+          <tr><td>Y</td><td>Latitude of the crime location</td></tr>
+          <tr><td>Descript</td><td>Short text description of the incident</td></tr>
+        </tbody>
+      </table>
+      <figcaption style="text-align: center; font-size: 0.95rem; color: #cf6650; margin-bottom: 0.5em;">
+        Table 1. Column descriptions from San Francisco’s open data portal dataset.
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- Table 2 -->
+  <div style="flex: 1; min-width: 250px;">
+    <figure style="margin: 0;">
+      <table>
+        <thead>
+          <tr>
+            <th>Column</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>specimen_collection_date</td><td>Date that test was collected</td></tr>
+          <tr><td>tests</td><td>Total tests collected on the specified date</td></tr>
+        </tbody>
+      </table>
+      <figcaption style="text-align: center; font-size: 0.95rem; color: #cf6650; margin-bottom: 0.5em;">
+        Table 2. Column descriptions from DataSF Health and Social Data dataset.
+      </figcaption>
+    </figure>
+  </div>
+
+</div>
 
 
 These columns provide all the necessary data for our analysis. 
@@ -98,7 +136,7 @@ If there was any doubt about the effect of COVID-19, the relation between positi
     style="width: 100%; height: 500px; border: none;"
     title="Interactive COVID crime plot"
   ></iframe>
-  <figcaption style="font-size: 0.95rem; color: #888; margin-top: 0.5em;">
+  <figcaption style="font-size: 0.95rem; color: #cf6650; margin-top: 0.5em;">
     Figure 1. Interactive visualization of crime patterns during the COVID-19 pandemic. To interact with the graph, select or deselect different crimes in the legend on the right.
   </figcaption>
 </figure>
@@ -116,7 +154,7 @@ For a deeper examination of the extent to which each crime category was impacted
 
 <figure style="text-align: center; margin: 2em 0;">
   <img src="/plots/mean_daily_crimes.svg" style="width:100%; height:auto;" alt="Mean daily crimes over time" />
-  <figcaption style="font-size: 0.95rem; color: #777; margin-top: 0.5em;">
+  <figcaption style="font-size: 0.95rem; color: #cf6650; margin-top: 0.5em;">
     Figure 2. Difference in average crime occurences in San Fransisco in lockdown (orange) and non-lockdown (dark purple) periods. Each set of bars is labeled with the percentage increase (green text) decrease (red text).
   </figcaption>
 </figure>
@@ -144,3 +182,8 @@ Overall, the nearly 70% increase in burglaries during the COVID period signals t
 ---
 
 ## Map of Burglary Incidents Over Time
+
+
+## Conclusion
+
+The COVID-19 pandemic brought significant changes to crime patterns in San Francisco, revealing intriguing shifts that may reflect broader social and economic impacts. While the decline in crimes like assault, theft, and prostitution aligns with reduced public interaction during lockdowns, the surge in burglaries suggests that decreased guardianship, shifting criminal opportunities, and economic pressures could have contributed to this trend. These observations raise interesting questions about how sudden disruptions can reshape criminal behavior and what this might mean for future crisis responses. Further exploration could help clarify these patterns and inform strategies for addressing crime in times of widespread upheaval.
