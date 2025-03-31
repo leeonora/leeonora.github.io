@@ -55,16 +55,18 @@ date: March 31, 2025
     </p>
     <h3>The dataset</h3>
     <p>
-      Our analysis is based on the Our data comes from 
+      Our analysis is based on the data from 
         <a href="https://data.sfgov.org/browse?category=Public+Safety&sortBy=relevance&page=1&pageSize=20" target="_blank" rel="noopener noreferrer">
         San Francisco’s open data portal
         </a>
-
-      -- a database of incidents from the San Fransisco Police Department (SFPD), detailling crimes from 2003 to 2024. The data has been cleaned and sorted, so it consists of the following columns: 
+      -- a database of incidents from the San Fransisco Police Department (SFPD), detailling crimes from 2003 to 2024 -- and 
+      <a href="https://data.sfgov.org/Health-and-Social-Services/COVID-19-Testing-Over-Time/nfpa-mg4g/about_data?fbclid=IwY2xjawJXhxtleHRuA2FlbQIxMAABHeaQj0zq-OwbW3dAea5VXlPDTf_6xVWeIKo-RrsJwm0tfSX5JcEfb9n-0g_aem_YvXp_yEs8isIKCLf7rhhnQ" target="_blank" rel="noopener noreferrer">
+        DataSF Health and Social Data
+        </a>
+      of COVID-19 testing over time. The data has been cleaned and sorted, so it consists of the columns outlines in Table 1 below. 
     </p>
 
   </div>
-
 </div>
 
 | Column       | Description                                                       |
@@ -77,6 +79,11 @@ date: March 31, 2025
 | Y            | Latitude of the crime location                                    |
 | Descript     | Short text description of the incident                            |
 
+<p style="text-align:center; font-size: 0.95rem; color: #888;">
+  Table 1. Description of columns in the dataset.
+</p>
+
+
 These columns provide all the necessary data for our analysis. 
 
 ---
@@ -88,7 +95,7 @@ If there was any doubt about the effect of COVID-19, the relation between positi
 <figure style="text-align: center; margin: 2em 0;">
   <iframe 
     src="/plots/covid_crime_plot.html"
-    style="width: 100%; height: 70vh; border: none;"
+    style="width: 100%; height: 500px; border: none;"
     title="Interactive COVID crime plot"
   ></iframe>
   <figcaption style="font-size: 0.95rem; color: #888; margin-top: 0.5em;">
@@ -97,9 +104,9 @@ If there was any doubt about the effect of COVID-19, the relation between positi
 </figure>
 
 
-Here, the left y-axis shows the percentage of positive tests in a given week (green curve) and the right shows the weekly crime count (i.e. the sum of crimes in a given week). As expected, most crimes show a decreasing rate during the peak years of the pandemic, with prostitution serving as a notable example; given widespread public concern regarding physical contact during this period, it is unsurprising that this particular offense experienced a significant decrease in occurences.
+Here, the right y-axis shows a seven-day rolling average of the number of COVID-tests (blue curve) and the left shows a seven-day rolling average of crime count. As expected, most crimes show a decreasing rate during the peak years of the pandemic, with larceny/theft serving as a notable example; given the official stay-at-home order forcing people to remain in their houses, it is unsurprising that this particular offense experienced a significant decrease in occurences.
 
-While the graph serves as an interactive illustration of the occurences of different crimes during the pandemic, it would be beneficial to investigate just how much each crime was affected. 
+Suprisingly, it appears that crime incidents for burglary increase during the pandemic. This highlights the need investigate just how much each crime was affected. 
 
 ---
 
